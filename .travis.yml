@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - "7"
+before_script:
+  - npm install gulp -g
+  - npm install hexo-cli -g
+script:
+  - chmod +x ./build.sh
+  - chmod +x ./deploy.sh
+branches:
+  only:
+    - master
+cache:
+  directories:
+    - "node_modules"
