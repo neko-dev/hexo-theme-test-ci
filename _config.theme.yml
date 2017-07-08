@@ -33,7 +33,7 @@ scheme: Paradox
 
 # UI & UX: slogan, color, effect
 uiux:
-    slogan: "Hi, nice to meet you"
+    slogan: "This is the test of Material Theme"
     theme_color: "#0097A7"
     theme_sub_color: "#00838F"
     hyperlink_color: "#00838F"
@@ -49,7 +49,7 @@ js_effect:
 
 # Reading experience
 reading:
-    entry_excerpt: 80
+    entry_excerpt: 100
 
 # Thumbnail Settings
 thumbnail:
@@ -87,8 +87,8 @@ img:
 #       When you configured 'use' as 'custom', you should fill in the value of 'custom_font_host', which should be a mirror of google fonts.
 fonts:
     family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif
-    use: google
-    custom_font_host:
+    use: custom
+    custom_font_host: https://fonts.cdn.ooi.moe
 
 # Card Elevation Level
 card_elevation: 2
@@ -96,7 +96,7 @@ card_elevation: 2
 # Copyright
 # Specify the date when the site was setup.
 #   For example, if you set it as 2015, then footer will show '© 2015 - 2017'
-copyright_since:
+copyright_since: 2016
 
 # Footer Text
 # You can specify the text you want to show in footer, HTML tag is supported.
@@ -144,7 +144,7 @@ toc:
 
 # SNS Menu
 sns:
-    email: youremail@email.com
+    email: vio@nekodev.io
     facebook: "https://www.facebook.com/facebook"
     twitter: "https://twitter.com/twitter"
     googleplus: "https://www.google.com/"
@@ -241,9 +241,9 @@ leancloud:
 
 # Busuanzi 不蒜子 Views
 busuanzi:
-    enable: false
-    all_site_uv: false
-    post_pv: false
+    enable: true
+    all_site_uv: true
+    post_pv: true
     busuanzi_pure_mini_js: "https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"
 
 # Files Vendors
