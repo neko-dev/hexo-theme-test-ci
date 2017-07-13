@@ -4,9 +4,20 @@ node_js:
 before_script:
   - npm install gulp -g
   - npm install hexo-cli -g
+  - git clone https://github.com/viosey/hexo-theme-material.git
+  - cd hexo-theme-material
+  - git checkout -t origin/canary
+  - git pull
+  - cd ..
+  - cp -R hexo-material/ _hexo/themes/material
+install:
+  - cd ./_hexo
+  - npm install
 script:
-  - chmod +x ./build.sh
-  - chmod +x ./deploy.sh
+  - chmod +x ../build.sh
+  - chmod +x ../deploy.sh
+  - ../build.sh > /dev/null
+  - ../deploy.sh > /dev/null
 branches:
   only:
     - master
