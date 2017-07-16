@@ -13,9 +13,7 @@ before_script:
   - rm -rf .git
   - cd ..
   - cd ..
-  - cd ..
-  - cp -i _config.theme.yml _hexo/themes/material/_config.yml
-  - cd _hexo
+  - cp -i ./_config.theme.yml themes/material/_config.yml
 script:
   - chmod +x ../build.sh
   - chmod +x ../deploy.sh
