@@ -9,9 +9,7 @@ before_script:
   - git checkout -t origin/canary
   - git pull
   - rm -rf .git
-  - cd ....
-install:
-  - cd ./_hexo
+  - cd ...
   - npm install
 script:
   - chmod +x ../build.sh
