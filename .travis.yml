@@ -8,8 +8,9 @@ before_script:
   - cd hexo-theme-material
   - git checkout -t origin/canary
   - git pull
+  - rm -rf .git
   - cd ..
-  - cp -R hexo-material/ _hexo/themes/material
+  - cp -R hexo-theme-material/ _hexo/themes/material
 install:
   - cd ./_hexo
   - npm install
