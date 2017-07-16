@@ -9,7 +9,7 @@ before_script:
   - git checkout -t origin/canary
   - git pull
   - rm -rf .git
-  - cd ~/_hexo
+  - cd ~/neko-dev/hexo-theme-test-ci/_hexo
   - npm install
 script:
   - chmod +x ../build.sh
