@@ -13,6 +13,7 @@ before_script:
   - rm -rf .git
   - cd ..
   - cd ..
+  - cp -i ../config.theme.yml themes/material/_config.yml
 script:
   - chmod +x ../build.sh
   - chmod +x ../deploy.sh
