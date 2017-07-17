@@ -1,21 +1,12 @@
 language: node_js
 node_js:
   - "7"
-before_script:
+install:
   - npm install gulp -g
   - npm install hexo-cli -g
-  - cd _hexo
-  - npm install
-  - git clone https://github.com/viosey/hexo-theme-material.git themes/material
-  - cd themes/material
-  - git checkout -t origin/canary
-  - git pull
-  - rm -rf .git
-  - cd ..
-  - cd ..
-  - cd ..
-  - cp -i _config.theme.yml _hexo/themes/material/_config.yml
-  - cd _hexo
+before_script:
+  - chmod +x ./install-material.sh
+  - ./install-material.sh > /dev/null
 script:
   - chmod +x ../build.sh
   - chmod +x ../deploy.sh
