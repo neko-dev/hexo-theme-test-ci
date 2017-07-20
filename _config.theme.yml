@@ -73,8 +73,8 @@ img:
     logo: "https://p0.ssl.qhimg.com/t0181ff8afb0ea7ff9f.png"
     avatar: "https://p0.ssl.qhimg.com/t01c288af422308ed02.png"
     daily_pic: "https://p0.ssl.qhimg.com/t01851b4dd254856de6.png"
-    sidebar_header: "/img/sidebar_header.png"
-    random_thumbnail: "https://api.onji.cn/img/?url=https://blog.viosey.com/img/random/material-"
+    sidebar_header: "https://cdn.jsdelivr.net/npm/hexo-material@1.4.0/source/img/sidebar_header.png"
+    random_thumbnail: "https://cdn.jsdelivr.net/npm/hexo-material@1.4.0/source/img/random/material-"
     footer_image:
         #upyun_logo:
             #link: "https://www.upyun.com/"
@@ -182,7 +182,7 @@ sidebar:
         icon: inbox
         divider: false
     categories:
-        use: false
+        use: true
         icon: chrome_reader_mode
         divider: false
     pages:
