@@ -7,7 +7,9 @@ var capabilities = {
   'os_version' : '10',
   'resolution' : '1024x768',
   'browserstack.user' : '{bs_user}',
-  'browserstack.key' : '{bs_key}'
+  'browserstack.key' : '{bs_key}',
+  'project' : '{bs_project}',
+  'build' : '{bs_build_number} - {bs_commit}'
 }
 
 var driver = new webdriver.Builder().
