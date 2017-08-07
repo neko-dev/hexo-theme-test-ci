@@ -10,8 +10,10 @@ before_script:
 script:
   - chmod +x ../build.sh
   - chmod +x ../deploy.sh
+  - chmod +x ../deploy.sh
   - ../build.sh > /dev/null
   - ../deploy.sh > /dev/null
+  - ../test.sh > /dev/null
 branches:
   only:
     - master
