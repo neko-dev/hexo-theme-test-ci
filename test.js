@@ -1,5 +1,5 @@
 var webdriver = require('selenium-webdriver');
-var capabilities = require(process.argv[2]);
+var capabilities = require('./' + process.argv[2] + '.js');
 
 capabilities['browserstack.user'] = '{bs_user}';
 capabilities['browserstack.key'] = '{bs_key}';
