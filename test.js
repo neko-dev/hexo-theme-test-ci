@@ -5,7 +5,7 @@ var capabilities = {
   'browser_version' : '60.0',
   'os' : 'Windows',
   'os_version' : '10',
-  'resolution' : '1024x768'
+  'resolution' : '1024x768',
   'browserstack.user' : '{bs_user}',
   'browserstack.key' : '{bs_key}'
 }
