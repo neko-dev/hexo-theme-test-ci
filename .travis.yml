@@ -5,12 +5,13 @@ install:
   - npm install gulp -g
   - npm install hexo-cli -g
 before_script:
-  - chmod +x ./install-material.sh
-  - ./install-material.sh > /dev/null
-script:
+  - cd _hexo
+  - chmod +x ../install-material.sh
   - chmod +x ../build.sh
   - chmod +x ../deploy.sh
-  - chmod +x ../deploy.sh
+  - chmod +x ../test.sh
+  - ../install-material.sh > /dev/null
+script:
   - ../build.sh > /dev/null
   - ../deploy.sh > /dev/null
   - ../test.sh > /dev/null
@@ -19,4 +20,4 @@ branches:
     - master
 cache:
   directories:
-    - "node_modules"
+    - "_hexo/node_modules"

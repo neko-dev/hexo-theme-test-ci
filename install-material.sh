@@ -1,4 +1,3 @@
-cd _hexo
 npm install
 git clone https://github.com/viosey/hexo-theme-material.git themes/material
 cd themes/material
