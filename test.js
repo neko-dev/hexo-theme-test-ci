@@ -33,7 +33,7 @@ driver.findElement(webdriver.By.css('.sidebar-toggle.MD-burger-icon')).then(func
   webdriver.promise.rejected(err);
 });
 
-driver.findElement(webdriver.By.css('.sidebar-overlay.active')).then(function(element){
+driver.findElement(webdriver.By.css('.sidebar-toggle.mdl-button.mdl-js-button')).then(function(element){
   element.click();
   driver.sleep(1000);
   driver.findElement(webdriver.By.css('.post_thumbnail-random.mdl-card__media')).then(function(element){
