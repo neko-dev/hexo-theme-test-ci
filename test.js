@@ -22,12 +22,12 @@ var driver = new webdriver.Builder().
 
 driver.get('https://neko-dev.github.io/');
 driver.sleep(2000);
-driver.saveScreenshot('Index.png');
+driver.saveScreenshot('Index');
 
 driver.findElement(webdriver.By.css('.sidebar-toggle.MD-burger-icon')).then(function(element){
   element.click();
   driver.sleep(1000);
-  driver.takeScreenshot('Sidebar.png');
+  driver.takeScreenshot('Sidebar');
 }, function (err) {
   console.log("Can not click");
   webdriver.promise.rejected(err);
@@ -39,7 +39,7 @@ driver.findElement(webdriver.By.css('.sidebar-overlay.active')).then(function(el
   driver.findElement(webdriver.By.css('.post_thumbnail-random.mdl-card__media')).then(function(element){
     element.click();
     driver.sleep(2000);
-    driver.takeScreenshot('HelloWorld.png');
+    driver.takeScreenshot('HelloWorld');
   }, function (err) {
     console.log("Can not click");
     webdriver.promise.rejected(err);
