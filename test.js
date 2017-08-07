@@ -15,11 +15,14 @@ driver.get('https://neko-dev.github.io/');
 driver.takeScreenshot();
 
 try {
-  driver.findElement(webdriver.By.css('.sidebar-toggle.MD-burger-icon')).click();
+  var element=driver.findElement(webdriver.By.css('.sidebar-toggle.MD-burger-icon'));
+  element.click();
   driver.sleep(1000);
   driver.takeScreenshot();
-}catch(e){
+} catch(e) {
   console.log('Load failed');
+} finally {
+  driver.quit();
 }
 
-driver.quit();
+
