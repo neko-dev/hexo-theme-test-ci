@@ -1,16 +1,10 @@
 var webdriver = require('selenium-webdriver');
+var capabilities = require(process.argv[2]);
 
-var capabilities = {
-  'browserName' : 'Chrome',
-  'browser_version' : '60.0',
-  'os' : 'Windows',
-  'os_version' : '10',
-  'resolution' : '1024x768',
-  'browserstack.user' : '{bs_user}',
-  'browserstack.key' : '{bs_key}',
-  'project' : '{bs_project}',
-  'build' : '{bs_build_number} - {bs_commit}'
-}
+capabilities['browserstack.user'] = '{bs_user}';
+capabilities['browserstack.key'] = '{bs_key}';
+capabilities['project'] = '{bs_project}';
+capabilities['build'] = '{bs_build_number} - {bs_commit}';
 
 var driver = new webdriver.Builder().
   usingServer('http://hub-cloud.browserstack.com/wd/hub').
