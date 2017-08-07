@@ -12,8 +12,9 @@ var driver = new webdriver.Builder().
   build();
 
 driver.get('https://neko-dev.github.io/');
+driver.takeScreenshot();
 driver.findElement(webdriver.By.css('.sidebar-toggle.MD-burger-icon')).click();
-driver.sleep(2000);
+driver.sleep(1000);
 driver.takeScreenshot();
 
 driver.quit();
