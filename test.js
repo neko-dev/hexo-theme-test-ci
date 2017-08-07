@@ -9,7 +9,7 @@ capabilities['build'] = '{bs_build_number} - {bs_commit}';
 
 webdriver.WebDriver.prototype.saveScreenshot = function(filename) {
     return driver.takeScreenshot().then(function(data) {
-        fs.writeFile('_output/' + process.argv[3] + '/' + filename + '.png', data.replace(/^data:image\/png;base64,/,''), 'base64', function(err) {
+        fs.writeFile('_output/img/' + process.argv[3] + '/' + filename + '.png', data.replace(/^data:image\/png;base64,/,''), 'base64', function(err) {
             if(err) throw err;
         });
     })
