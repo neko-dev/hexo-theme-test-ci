@@ -16,11 +16,13 @@ driver.takeScreenshot();
 
 try {
   var element=driver.findElement(webdriver.By.css('.sidebar-toggle.MD-burger-icon'));
-  element.click();
-  driver.sleep(1000);
-  driver.takeScreenshot();
-} catch(e) {
-  console.log('Load failed');
+  if(element.isDisplayed()) {
+    element.click();
+    driver.sleep(1000);
+    driver.takeScreenshot();
+  }else{
+    console.log("Can not click");
+  }
 } finally {
   driver.quit();
 }
