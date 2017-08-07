@@ -10,7 +10,7 @@ var driver = new webdriver.Builder().
   usingServer('http://hub-cloud.browserstack.com/wd/hub').
   withCapabilities(capabilities).
   build();
-
+driver.manage().timeouts().implicitlyWait();
 driver.get('https://neko-dev.github.io/');
 driver.takeScreenshot();
 driver.findElement(webdriver.By.css('.sidebar-toggle.MD-burger-icon')).click();
