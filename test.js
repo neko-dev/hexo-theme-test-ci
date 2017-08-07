@@ -27,7 +27,7 @@ driver.saveScreenshot('Index');
 driver.findElement(webdriver.By.css('.sidebar-toggle.MD-burger-icon')).then(function(element){
   element.click();
   driver.sleep(1000);
-  driver.takeScreenshot('Sidebar');
+  driver.saveScreenshot('Sidebar');
 }, function (err) {
   console.log("Can not click");
   webdriver.promise.rejected(err);
@@ -39,7 +39,7 @@ driver.findElement(webdriver.By.css('.sidebar-toggle.mdl-button.mdl-js-button'))
   driver.findElement(webdriver.By.css('.post_thumbnail-random.mdl-card__media')).then(function(element){
     element.click();
     driver.sleep(2000);
-    driver.takeScreenshot('HelloWorld');
+    driver.saveScreenshot('HelloWorld');
   }, function (err) {
     console.log("Can not click");
     webdriver.promise.rejected(err);
