@@ -1,8 +1,8 @@
 var capabilities = {
- 'browserName' : 'Firefox',
- 'browser_version' : '54.0',
- 'os' : 'Windows',
- 'os_version' : '10',
+ 'browserName' : 'Safari',
+ 'browser_version' : '10.1',
+ 'os' : 'OS X',
+ 'os_version' : 'Sierra',
  'resolution' : '1024x768'
 };
 

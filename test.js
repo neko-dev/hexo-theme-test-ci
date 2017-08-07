@@ -20,6 +20,7 @@ driver.findElement(webdriver.By.css('.sidebar-toggle.MD-burger-icon')).then(func
   driver.takeScreenshot();
 }, function (err) {
   console.log("Can not click");
+  webdriver.promise.rejected(err);
 });
 driver.quit();
 
