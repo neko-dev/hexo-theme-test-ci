@@ -14,17 +14,13 @@ var driver = new webdriver.Builder().
 driver.get('https://neko-dev.github.io/');
 driver.takeScreenshot();
 
-try {
-  var element=driver.findElement(webdriver.By.css('.sidebar-toggle.MD-burger-icon'));
-  if(element.isDisplayed()) {
-    element.click();
-    driver.sleep(1000);
-    driver.takeScreenshot();
-  }else{
-    console.log("Can not click");
-  }
-} finally {
-  driver.quit();
-}
+driver.findElement(webdriver.By.css('.sidebar-toggle.MD-burger-icon')).then(function(element){
+  element.click();
+  driver.sleep(1000);
+  driver.takeScreenshot();
+}, function (err) {
+  console.log("Can not click");
+});
+driver.quit();
 
 
