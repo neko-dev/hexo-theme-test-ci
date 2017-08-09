@@ -24,6 +24,22 @@ driver.get('https://neko-dev.github.io/');
 driver.sleep(2000);
 driver.saveScreenshot('Index');
 
+driver.findElement(webdriver.By.css('.mdl-button.mdl-js-ripple-effect.mdl-js-button.mdl-button--fab')).then(function(element){
+  element.click();
+  driver.sleep(1000);
+    driver.findElement(webdriver.By.css('#search')).then(function(element){
+      element.sendKeys("Hello");
+      driver.sleep(1000);
+      driver.saveScreenshot('Search');
+    }, function (err) {
+      console.log("Can not click");
+      webdriver.promise.rejected(err);
+    });
+}, function (err) {
+  console.log("Can not click");
+  webdriver.promise.rejected(err);
+});
+
 driver.findElement(webdriver.By.css('.sidebar-toggle.MD-burger-icon')).then(function(element){
   element.click();
   driver.sleep(1000);
@@ -48,6 +64,17 @@ driver.findElement(webdriver.By.css('.sidebar-toggle.mdl-button.mdl-js-button'))
   console.log("Can not click");
   webdriver.promise.rejected(err);
 });
+
+driver.findElement(webdriver.By.css('#article-functions-qrcode-button')).then(function(element){
+  element.click();
+  driver.sleep(1000);
+  driver.saveScreenshot('Qrcode');
+}, function (err) {
+  console.log("Can not click");
+  webdriver.promise.rejected(err);
+});
+
+
 
 
 driver.quit();
