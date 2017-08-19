@@ -20,7 +20,7 @@ var driver = new webdriver.Builder().
   withCapabilities(capabilities).
   build();
 
-driver.get('https://neko-dev.github.io/');
+driver.get('https://neko-dev.github.io/material-demo/');
 driver.sleep(2000);
 driver.saveScreenshot('Index');
 
