@@ -87,8 +87,8 @@ img:
 #       When you configured 'use' as 'custom', you should fill in the value of 'custom_font_host', which should be a mirror of google fonts.
 fonts:
     family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif
-    use: custom
-    custom_font_host: https://fonts.cdn.ooi.moe
+    use: catnet
+    custom_font_host:
 
 # Card Elevation Level
 card_elevation: 2
@@ -261,9 +261,9 @@ vendors:
 #   For example
 #       jquery: https://cdn.bootcss.com/jquery/2.2.1/jquery.js
     # jQuery 2.2.0
-    jquery:
+    jquery: https://cdnjs.cat.net/ajax/libs/jquery/2.2.0/jquery.min.js
     # nprogress 0.2.0
-    nprogress: https://js.cdnbee.com/libs/nprogress/0.2.0/nprogress.min.js
+    nprogress: https://cdnjs.cat.net/ajax/libs/nprogress/0.2.0/nprogress.min.js
     # FontAwesome 4.5.0
     fontawesome:
     # MathJax 2.7.0-2.7.1
@@ -271,4 +271,4 @@ vendors:
     # Prettify r298 (only prettify.js)
     prettify:
     # Material Icons 3.0.1
-    material_icons: https://fonts.cdn.ooi.moe/icon?family=Material+Icons
+    material_icons:
