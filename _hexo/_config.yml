@@ -65,6 +65,17 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: material
 
+search:
+    path: search.xml
+    field: all
+
+# RSS
+feed:
+    type: atom
+    path: atom.xml
+    limit: 40
+    hub:
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
